@@ -5,18 +5,18 @@
 #                                                     +:+ +:+         +:+      #
 #    By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/02/06 11:46:11 by fzayani           #+#    #+#              #
-#    Updated: 2025/02/06 13:53:39 by fzayani          ###   ########.fr        #
+#    Created: 2025/02/06 16:42:07 by fzayani           #+#    #+#              #
+#    Updated: 2025/02/06 16:42:09 by fzayani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Zombie
+NAME = brain
 
 CC = c++
 
 CFLAG = -Wall -Wextra -Wextra -std=c++98
 
-SRC = main.cpp newZombie.cpp randomChump.cpp Zombie.cpp
+SRC = main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

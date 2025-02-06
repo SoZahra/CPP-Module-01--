@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/05 19:30:00 by fzayani           #+#    #+#             */
-/*   Updated: 2025/02/06 14:07:39 by fzayani          ###   ########.fr       */
+/*   Created: 2025/02/06 14:32:59 by fzayani           #+#    #+#             */
+/*   Updated: 2025/02/06 15:56:55 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 
 int main()
 {
-	Zombie* heapZombie = newZombie("Heap");
-	heapZombie->announce();
+	Zombie* hordeZombie = zombieHorde(5, "FatZombie");
 
-	randomChump("Stack");
-	delete heapZombie;
+	for (int i = 0; i < 5; i++)
+		hordeZombie[i].announce();
+
+	delete[] hordeZombie;
 	return (0);
 }

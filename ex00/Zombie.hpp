@@ -1,24 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/05 19:30:00 by fzayani           #+#    #+#             */
-/*   Updated: 2025/02/06 14:07:39 by fzayani          ###   ########.fr       */
+/*   Created: 2025/02/06 11:45:50 by fzayani           #+#    #+#             */
+/*   Updated: 2025/02/06 13:50:52 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "Zombie.hpp"
 
-int main()
-{
-	Zombie* heapZombie = newZombie("Heap");
-	heapZombie->announce();
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
 
-	randomChump("Stack");
-	delete heapZombie;
-	return (0);
-}
+class Zombie {
+
+public:
+	Zombie(std::string name);
+	~Zombie(void);
+	void announce(void);
+
+private:
+	std::string name;
+};
+
+Zombie* newZombie( std::string name );
+void randomChump( std::string name );
+
+
+#endif
+

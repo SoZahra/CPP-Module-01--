@@ -1,24 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/05 19:30:00 by fzayani           #+#    #+#             */
-/*   Updated: 2025/02/06 14:07:39 by fzayani          ###   ########.fr       */
+/*   Created: 2025/02/06 13:22:09 by fzayani           #+#    #+#             */
+/*   Updated: 2025/02/06 14:02:11 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
 #include "Zombie.hpp"
+#include <iostream>
 
-int main()
+void randomChump( std::string name )
 {
-	Zombie* heapZombie = newZombie("Heap");
-	heapZombie->announce();
-
-	randomChump("Stack");
-	delete heapZombie;
-	return (0);
+	Zombie zombie(name);
+	zombie.announce();
 }
