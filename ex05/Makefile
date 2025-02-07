@@ -5,18 +5,18 @@
 #                                                     +:+ +:+         +:+      #
 #    By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/02/06 16:42:07 by fzayani           #+#    #+#              #
-#    Updated: 2025/02/07 14:04:41 by fzayani          ###   ########.fr        #
+#    Created: 2025/02/07 18:01:12 by fzayani           #+#    #+#              #
+#    Updated: 2025/02/07 18:01:44 by fzayani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = brain
+NAME = harl
 
 CC = c++
 
 CFLAG = -Wall -Wextra -Wextra -std=c++98
 
-SRC = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
+SRC = main.cpp Harl.cpp
 
 OBJ = $(SRC:.cpp=.o)
 

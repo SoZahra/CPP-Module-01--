@@ -5,18 +5,18 @@
 #                                                     +:+ +:+         +:+      #
 #    By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/02/06 16:42:07 by fzayani           #+#    #+#              #
-#    Updated: 2025/02/07 14:04:41 by fzayani          ###   ########.fr        #
+#    Created: 2025/02/07 15:09:16 by fzayani           #+#    #+#              #
+#    Updated: 2025/02/07 15:09:46 by fzayani          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = brain
+NAME = losers
 
 CC = c++
 
 CFLAG = -Wall -Wextra -Wextra -std=c++98
 
-SRC = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
+SRC = main.cpp 
 
 OBJ = $(SRC:.cpp=.o)
 
