@@ -6,7 +6,7 @@
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 16:15:44 by fzayani           #+#    #+#             */
-/*   Updated: 2025/02/07 18:42:13 by fzayani          ###   ########.fr       */
+/*   Updated: 2025/02/08 13:13:59 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,14 @@ void Harl::complain(std::string level)
 	Harl::ptr_func  funcs[FUNC_SIZE] = {
 		&Harl::debug,
 		&Harl::info,
-		&Harl::error,
-		&Harl::warning
+		&Harl::warning,
+		&Harl::error
 	};
 
 	for (int i = 0; i < FUNC_SIZE; i++)
 	{
 		if(names[i] == level)
-			(this->*funcs[i])();
+			funcs[i]();
 	}
 }
 

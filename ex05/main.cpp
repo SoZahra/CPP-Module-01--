@@ -6,7 +6,7 @@
 /*   By: fzayani <fzayani@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/07 17:34:05 by fzayani           #+#    #+#             */
-/*   Updated: 2025/02/07 18:41:36 by fzayani          ###   ########.fr       */
+/*   Updated: 2025/02/08 13:14:43 by fzayani          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ int main()
 	Harl harl;
 
 	harl.complain("DEBUG");
-	// harl.complain("WARNING");
-	harl.complain("INFO");
+	harl.complain("WARNING");
 	harl.complain("ERROR");
+	harl.complain("INFO");
+	harl.complain(" ");
+	harl.complain("lngwjrg");
 }
